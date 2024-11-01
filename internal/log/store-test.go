@@ -33,7 +33,7 @@ func openFile(name string) (file *os.File, size int64, err error) {
 // Tests
 
 func TestStoreAppendRead(t *testing.T) {
-	f, err := os.CreateTemp("", "store_append_read_test")
+	f, err := os.CreateTemp("", "store-append-read-test")
 	require.NoError(t, err)
 	defer os.Remove(f.Name())
 
@@ -90,7 +90,7 @@ func testAppend(t *testing.T, s *store) {
 }
 
 func testClose(t *testing.T) {
-	f, err := os.CreateTemp("", "store_close_test")
+	f, err := os.CreateTemp("", "store-close-test")
 	require.NoError(t, err)
 	defer os.Remove(f.Name())
 	s, err := newStore(f)

@@ -10,6 +10,11 @@ type Log struct {
 	records []Record
 }
 
+type Record struct {
+	Value  []byte `json:"value`
+	Offset uint64 `json:"offset"`
+}
+
 var ErrOffsetNotFound = fmt.Errorf("Offset not found.")
 
 func NewLog() *Log {

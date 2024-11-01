@@ -1,0 +1,16 @@
+{
+    "CN": "Custom CA",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [
+        {
+            "C": "US",
+            "L": "NY",
+            "ST": "New York",
+            "O": "Custom Company",
+            "OU": "Security Infrastructure Team"
+        }
+    ]
+}
